@@ -18,6 +18,10 @@ body {
   height: 100vh;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .container-wrapper {
   background-color: #fff;
   display: flex;
@@ -25,25 +29,80 @@ body {
   align-items: center;
   width: 700px;
   height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 10px;
 }
 
-.img-wrapper {
+.container-wrapper .img-wrapper {
   vertical-align: top;
-  border: 1px solid #000;
   width: 50%;
   height: 100%;
   display: inline-block;
+  position: relative;
+  overflow: visible;
+}
+
+.container-wrapper .img-wrapper .pattern {
+  width: 600px;
+  position: absolute;
+  left: -300px;
+  bottom: -50px;
+}
+.container-wrapper .img-wrapper .picture-box {
+  width: 150px;
+  position: absolute;
+  left: -21%;
+  top: 40%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.container-wrapper .img-wrapper .ilustration {
+  width: 350px;
+  position: absolute;
+  left: -16%;
+  top: 15%;
+  z-index: 0;
 }
 
 .questions-wrapper {
-  border: 1px solid #000;
   width: 50%;
   height: 100%;
   display: inline-block;
+  padding: 20px 20px 20px 0;
 }
-.pattern {
-  width: 400px;
+
+.questions-wrapper .faq {
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: inherit;
 }
-.ilustration {
-  width: 400px;
+.questions-wrapper .accordion {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.questions-wrapper .question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.questions-wrapper .question button {
+}
+
+.questions-wrapper .answer {
+  margin-top: 5px;
+  display: none;
+}
+
+.questions-wrapper .answer .active {
+  opacity: 1;
+  color: red;
+  visibility: visible;
 }
