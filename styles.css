@@ -91,7 +91,7 @@ hr {
   margin-bottom: 0;
   height: 1px;
   background-color: hsl(240, 6%, 50%);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .questions-wrapper .question {
   display: flex;
@@ -118,3 +118,13 @@ button:hover {
   color: red;
   visibility: visible;
 } */
+
+.attribution {
+  margin-left: 20px;
+  font-size: 11px;
+  color: #fff;
+}
+
+.attribution a {
+  color: #f5e8c7;
+}
