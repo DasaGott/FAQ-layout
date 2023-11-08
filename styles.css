@@ -97,6 +97,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .questions-wrapper .question:hover,
 button:hover {
@@ -110,15 +111,31 @@ button:hover {
 
 .questions-wrapper .answer {
   margin: 10px 0;
+  opacity: 0;
   display: none;
 }
-/* 
-.questions-wrapper .answer .active {
-  opacity: 1;
-  color: red;
-  visibility: visible;
-} */
 
+.questions-wrapper
+  .faq
+  .accordion
+  .answer.active {
+  opacity: 1;
+  display: inline;
+}
+
+.questions-wrapper .accordion .question.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+.questions-wrapper
+  .accordion
+  .question
+  button.active {
+  transform: rotate(180deg);
+}
 .attribution {
   margin-left: 20px;
   font-size: 11px;
