@@ -8,9 +8,7 @@ questions.forEach(function (question) {
     const button = question.firstElementChild;
     const answer = question.nextElementSibling;
     if (question.classList.contains("active")) {
-      button.classList.remove("active");
-      question.classList.remove("active");
-      answer.classList.remove("active");
+      removeClass();
     } else {
       removeClass();
       button.classList.add("active");
