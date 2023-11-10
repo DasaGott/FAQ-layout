@@ -22,7 +22,7 @@ body {
   overflow: hidden;
   padding: 50px;
 }
-.skuska {
+.overflow-hidden-div {
   width: 100%;
   height: 400px;
   position: relative;
@@ -39,10 +39,10 @@ body {
   position: relative;
   border-radius: 20px;
   margin: 10px;
+  max-width: 100%;
 }
 
 .container-wrapper .img-wrapper {
-  vertical-align: top;
   width: 50%;
   height: 100%;
   display: inline-block;
@@ -148,4 +148,34 @@ button:hover {
 
 .attribution a {
   color: #f5e8c7;
+}
+
+@media only screen and (max-width: 675px) {
+  .container-wrapper {
+    position: relative;
+    max-width: 100%;
+    height: 70vh;
+  }
+
+  .questions-wrapper {
+    position: absolute;
+    top: 30%;
+    width: 80vw;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container-wrapper .img-wrapper {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+  }
+  .questions-wrapper .faq {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+  }
 }
