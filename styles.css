@@ -151,6 +151,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 675px) {
+  .container {
+    padding-top: 80px;
+  }
   .container-wrapper {
     position: relative;
     max-width: 100%;
@@ -196,7 +199,7 @@ button:hover {
   .container-wrapper .img-wrapper .picture-box {
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 6%;
     z-index: 1;
     width: 80px;
     max-width: 100%;
@@ -210,13 +213,5 @@ button:hover {
     left: 10%;
     max-width: 100%;
     height: auto;
-  }
-  /* .container {
-    overflow: visible;
-    max-width: 100%;
-  } */
-
-  .overflow-hidden-div {
-    overflow: visible;
   }
 }
