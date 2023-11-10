@@ -159,7 +159,7 @@ button:hover {
 
   .questions-wrapper {
     position: absolute;
-    top: 30%;
+    top: 15%;
     width: 80vw;
     padding: 20px;
     text-align: center;
@@ -190,6 +190,8 @@ button:hover {
     position: absolute;
     bottom: 40%;
     left: 10%;
+    max-width: 100%;
+    height: auto;
   }
   .container-wrapper .img-wrapper .picture-box {
     position: absolute;
@@ -197,6 +199,8 @@ button:hover {
     left: 10%;
     z-index: 1;
     width: 80px;
+    max-width: 100%;
+    height: auto;
   }
 
   .container-wrapper .img-wrapper .ilustration {
